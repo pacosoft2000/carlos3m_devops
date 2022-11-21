@@ -67,6 +67,10 @@
     </dependency>
   </dependencies>
 
+  <scm>
+    <developerConnection>scm:git:https://github.com/pacosoft2000/carlos3m_devops.git</developerConnection>
+  </scm>
+
    <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -109,6 +113,11 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>3.0.0-M7</version>
+      </plugin>
       </plugins>
     </pluginManagement>
   </build>
