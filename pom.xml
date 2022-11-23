@@ -122,6 +122,54 @@
     </pluginManagement>
   </build>
 
+   <!-- to resolve dependencies -->
+  <repositories>
+    <repository>
+        <id>central</id>
+        <url>http://20.234.232.61:8081/artifactory/libs-release</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+    <repository>
+        <id>snapshots</id>
+        <url>http://20.234.232.61:8081/artifactory/libs-snapshot</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+</repositories>
+
+<pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>http://20.234.232.61:8081/artifactory/libs-release</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+        <id>snapshots</id>
+        <url>http://20.234.232.61:8081/artifactory/libs-snapshot</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </pluginRepository>
+</pluginRepositories>
+
+<distributionManagement>
+  <repository>
+    <id>central</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://20.234.232.61:8081/artifactory/libs-release-local</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://20.234.232.61:8081/artifactory/libs-snapshot-local/</url>
+  </snapshotRepository>
+</distributionManagement>
+
 </project>
 
 
